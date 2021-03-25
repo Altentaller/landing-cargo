@@ -1,0 +1,76 @@
+.slider
+    padding: 81px 0
+    &__inner
+        position: relative
+        width: 750px
+        margin: 0 auto
+    .slick-prev
+        position: absolute 
+        top: 50%  
+        left: -70px 
+        border: none
+        background: #ffffff
+        z-index: 2
+        img 
+            width: 31px
+            height: 50px
+    .slick-next
+        position: absolute  
+        top: 50%            
+        left: auto
+        right: -70px   
+        border: none
+        background: #ffffff
+        z-index: 2
+        img 
+            width: 31px
+            height: 50px
+
+    &-dots 
+        text-align: center
+        li 
+            position: relative
+            display: inline-block
+            width: 20px
+            height: 20px
+            margin: 0 5px
+            padding: 0
+            cursor: pointer
+            button 
+                font-size: 0
+                line-height: 0
+                display: block
+                width: 20px
+                height: 20px
+                padding: 5px
+                cursor: pointer
+                color: transparent
+                border: 0
+                outline: none
+                background: transparent
+                &:hover, &:focus 
+                    outline: none
+                &:hover:before, &:focus:before 
+                    opacity: 1
+                &:before 
+                    font-family: 'slick'
+                    font-size: 50px
+                    line-height: 20px
+                    position: absolute
+                    top: 0
+                    left: 0
+                    width: 20px
+                    height: 20px
+                    content: '•'
+                    text-align: center
+                    opacity: .25
+                    color: $main-color
+                    -webkit-font-smoothing: antialiased
+                    -moz-osx-font-smoothing: grayscale  
+ 
+
+        li.slick-active button:before 
+            opacity: .75
+            color: black
+
+

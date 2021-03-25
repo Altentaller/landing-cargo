@@ -1,0 +1,52 @@
+.overlay
+    display: none
+    position: fixed
+    top: 0
+    width: 100%
+    height: 100%
+    z-index: 999
+    background: rgba(0,0,0,0.56)
+.modal
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 380px
+    min-height: 400px
+    background: #f2f2f2
+    padding: 38px 30px 40px 30px
+    &_small
+        min-height: 140px
+    &__close
+        position: absolute
+        top: 0 
+        right: -40px
+        color: $main-color
+        font-size: 40px
+        line-height: 20px
+        font-weight: 700
+        cursor: pointer
+    &__title
+        font-size: 18px        
+        font-weight: 700
+        text-align: center
+        color: #0d0d0d
+    &__desc
+        font-size: 14px        
+        text-align: center        
+        font-weight: 500
+        color: #0d0d0d
+    .error
+        border: 1px solid $main-color
+        text-align: center
+    label.error
+        font-size: 12px
+        border: none
+        text-align: center
+        line-height: 10px
+        margin-bottom: 20px
+
+
+#consult, #order, #thanks
+    display: none
+
