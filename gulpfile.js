@@ -1,4 +1,4 @@
-const gulp = require('gulp'); // Подключаем Gulp
+const gulp = require('gulp'); 
 const browserSync = require('browser-sync').create();
 const watch = require('gulp-watch');
 const sass = require('gulp-sass');
@@ -23,7 +23,7 @@ gulp.task('server', function() {
 });
 
 gulp.task('styles', function() {
-	return gulp.src('./src/sass/**/*.+(scss|sass|css)')
+	return gulp.src('./src/sass/**/*.+(scss|sass)')
 		.pipe( plumber({
 			errorHandler: notify.onError(function(err){
 				return {
