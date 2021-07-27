@@ -1,3 +1,7 @@
+AOS.init({
+  once: true
+});
+
 $(document).ready(function(){
     $('.slider__inner').slick({          
         infinite: true,
